@@ -1,0 +1,50 @@
+[parity]
+chain = "dev"
+base_path = "db.ss2"
+
+[ui]
+disable = true
+
+[rpc]
+disable = true
+
+[ipc]
+disable = true
+
+[dapps]
+disable = true
+
+[websockets]
+disable = true
+
+[network]
+port = 30302
+bootnodes = [
+  "enode://59ff7f71a8ced85f23d2455b8645931e962886cce7025fd4fb769c4881c505d8445aa24be98b1aa3067cf7490a2ff0cd1558c37f6a536a4d799f8d93c3fe21ea@127.0.0.1:30301",#node 1
+	"enode://58815b57d8af2bc04963bde42b27deca674c18dca4098b8891296479ce0a83c2398a141babb835f181c6447bb1ac2ce4dca88ec20908d41b86166018d842fab4@127.0.0.1:30303" #node 3
+]
+
+[ipfs]
+enable = false
+
+[snapshots]
+disable_periodic = true
+
+[secretstore]
+self_secret = "f0d5f6f68d18e190d010c52269ccf97d06204761"
+disable = false
+disable_http = true # Secret Store nodes 2 and 3 are not accessibles from the outside
+acl_contract = "none" # no permissionning contract used yet
+server_set_contract = "none"
+nodes = [
+	"83a051ff44f25df39cbf97b5ce48b48f7e3ba740f32d07e39df59743ec4a62b3e24cf041bfe5e1e149dc2228798342927444e3bd4b3798572045404880b275b4@127.0.0.1:8011",
+	"32be3581ee307da5ed3c6045b6213317fd5f2ac8525d16051c784a251c801ca47f1bb7180b0c40ca754f705837900a4d2f956b7cec5d0094c6dae397371b8f4a@127.0.0.1:8012",
+	"7b42943621c70020e62163ff24cc57366d820d5280495c8d9088b9a6bafbfef5b7a79bc3a56d324c325b970415692e48b9dd85102bd07fbaa7b05c6093697355@127.0.0.1:8013"
+]
+interface = "local"
+port = 8012
+path = "db.ss2/secretstore"
+
+[account]
+unlock = ["0xf0d5f6f68d18e190d010c52269ccf97d06204761"]
+password = ["ss2.pwd"]
