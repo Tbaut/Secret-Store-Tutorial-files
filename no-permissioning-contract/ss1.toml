@@ -33,10 +33,10 @@ disable_periodic = true
 [secretstore]
 self_secret = "93f22c0fa2e4e0750669add48dd8d9dfb8af36f4"
 disable = false
-disable_http = false
-http_interface = "local"
-http_port = 8010
-acl_contract = "none"
+disable_http = false # This node will expose a Secret Store HTTP API
+http_interface = "local" # The HTTP API is available locally only
+http_port = 8010 # The Secret Store HTTP API is available at this port
+acl_contract = "none" # Insecure, will be changed later on
 server_set_contract = "none"
 nodes = [
 	"83a051ff44f25df39cbf97b5ce48b48f7e3ba740f32d07e39df59743ec4a62b3e24cf041bfe5e1e149dc2228798342927444e3bd4b3798572045404880b275b4@127.0.0.1:8011",
