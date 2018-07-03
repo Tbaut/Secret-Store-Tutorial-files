@@ -7,7 +7,7 @@ base_path = "db.users"
 
 [rpc]
 port = 8545 #default http port for RPC
-apis = ["secretstore,eth"]            # add "eth"
+apis = ["secretstore","eth","net"]           # add "eth", "net"
 cors = ["http://remix.ethereum.org"]  # allow remix to access this node
 
 [secretstore]
