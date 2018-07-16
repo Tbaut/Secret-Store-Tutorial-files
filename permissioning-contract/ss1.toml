@@ -48,5 +48,4 @@ port = 8011
 path = "db.ss1/secretstore"
 
 [account]
-unlock = ["0x93f22c0fa2e4e0750669add48dd8d9dfb8af36f4"]
 password = ["ss1.pwd"]
