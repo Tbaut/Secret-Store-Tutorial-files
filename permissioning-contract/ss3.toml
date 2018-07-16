@@ -46,5 +46,4 @@ port = 8013
 path = "db.ss3/secretstore"
 
 [account]
-unlock = ["0x0f7b7d4120246348968530fb36092cd36ebaedbb"]
 password = ["ss3.pwd"]
