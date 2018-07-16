@@ -46,5 +46,4 @@ port = 8012
 path = "db.ss2/secretstore"
 
 [account]
-unlock = ["0xf0d5f6f68d18e190d010c52269ccf97d06204761"]
 password = ["ss2.pwd"]
